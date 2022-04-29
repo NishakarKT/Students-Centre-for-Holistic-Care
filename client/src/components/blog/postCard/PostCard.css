@@ -1,0 +1,109 @@
+.postCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 15px;
+  padding-bottom: 60px;
+  border-radius: 5px;
+  box-shadow: #64646f33 0px 7px 29px 0px;
+  transition: all 1s;
+  user-select: none;
+  background-color: white;
+  width: 300px;
+  min-height: 250px;
+  border: 2px solid white;
+}
+
+.postCard:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.postCard > .MuiIconButton-root {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: red;
+  transition: all 0.5s;
+  border: 2px solid white;
+}
+
+.postCard > .MuiIconButton-root:hover {
+  transform: scale(0.95);
+  filter: brightness(80%);
+  background-color: red;
+}
+
+.postCard > .MuiButton-root {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  align-self: flex-end;
+  text-transform: none;
+  color: white;
+  background-color: #1976d2;
+  transition: all 0.5s;
+  margin: 15px;
+}
+
+.postCard > .MuiButton-root:hover {
+  filter: brightness(80%);
+  background-color: #1976d2;
+  transform: translateX(-5px);
+}
+
+.postCard__date {
+  color: grey;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.postCard__name {
+  color: gray;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.postCard__title {
+  color: #1976d2;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.postCard__content {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.postCard__viewsCount {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.postCard__viewsCount > .MuiSvgIcon-root {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 680px) {
+  .postCard {
+    width: 100% !important;
+  }
+  .blog__posts {
+    flex-direction: column;
+  }
+}

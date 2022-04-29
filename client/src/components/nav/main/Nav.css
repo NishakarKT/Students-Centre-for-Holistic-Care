@@ -1,0 +1,80 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: #1d2410;
+  z-index: 2;
+  transition: background-color 0.5s;
+}
+
+.nav__left {
+  margin: 10px 10px;
+}
+
+.nav__left > img {
+  object-fit: contain;
+  width: 300px;
+  cursor: pointer;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  margin: 10px 30px;
+}
+
+.nav__link {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-left: 25px;
+  transition: all 0.5s;
+}
+
+.nav__link > p {
+  display: flex;
+  align-items: center;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.nav__menuBtn {
+  display: none;
+  color: white;
+  margin-right: 10px;
+}
+
+.nav__menuBtn > .MuiSvgIcon-root {
+  cursor: pointer;
+  font-size: 40px;
+  transition: all 0.5s;
+}
+
+.nav__menuBtn > .MuiSvgIcon-root:hover {
+  filter: brightness(80%);
+}
+
+@media only screen and (max-width: 1080px) {
+  .nav__menuBtn {
+    display: block;
+  }
+  .nav__right {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nav__left > img {
+    width: 200px;
+  }
+}

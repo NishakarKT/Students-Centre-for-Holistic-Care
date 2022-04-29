@@ -1,0 +1,247 @@
+.appointment {
+  flex: 1;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.appointment__deniedAccess {
+  font-size: 25px;
+  font-weight: 600;
+  color: #5e5e5e;
+  width: 95vw;
+  max-width: 500px;
+  display: flex;
+  text-align: center;
+  margin-bottom: 175px;
+  align-self: center;
+  border: none !important;
+}
+
+.appointment__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("https://images.unsplash.com/photo-1522241112606-b5d35a468795?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80")
+    rgba(0, 0, 0, 0.5) no-repeat center center / cover;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.appointment__intro > h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.appointment__intro > p {
+  width: 95vw;
+  font-weight: 500;
+  max-width: 800px;
+  font-size: 20px;
+}
+
+.appointment__introButtons {
+  display: flex;
+  align-items: center;
+}
+
+.appointment__introButtons > .MuiButton-root {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  text-transform: none;
+  transition: all 0.5s;
+  margin: 10px 2.5px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.appointment__introButtons > .MuiButton-root:hover {
+  filter: brightness(80%);
+  transform: translateY(5px);
+  background-color: white;
+}
+
+.appointment__form {
+  width: 95vw;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 30px 0;
+}
+
+.appointment__info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.appointment__info > .MuiTextField-root {
+  flex: 1;
+  margin: 10px 0;
+}
+
+.appointment__errMsg {
+  color: red;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+  animation: appointment__errAppear 0.2s linear 3 forwards;
+}
+
+@keyframes appointment__errAppear {
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.appointment__dateTime {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.appointment__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointment__buttons > .MuiButton-root {
+  flex: 1;
+  color: white;
+  text-transform: none;
+  transition: all 0.5s;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+
+.appointment__buttons > .MuiButton-root:hover {
+  filter: brightness(0.8);
+  background-color: teal;
+}
+
+.appointment__buttons > .MuiButton-root:focus {
+  animation: appointment__btnClick 0.35s linear 1;
+}
+
+.appointment__buttons > .MuiButton-root:active {
+  animation: none;
+}
+
+.appointment__detail textarea {
+  font-size: 16px;
+  font-family: "Roboto" !important;
+  padding: 5px;
+  border-radius: 3px;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 300px;
+  min-height: 300px;
+  border: 1.5px solid #9a9a9a;
+  outline: 1px solid #fff;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  transition: all 0.5s;
+  margin-bottom: 5px;
+}
+
+.appointment__detail textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+.appointment__detail textarea::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+}
+
+.appointment__darkTF label,
+.appointment__darkTF input {
+  color: white;
+}
+
+.appointment .css-1480iag-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid #949494 !important;
+}
+
+.appointment__darkTF .css-1480iag-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid white !important;
+}
+
+.appointment__darkTA {
+  color: white;
+  background-color: #15202b;
+}
+
+.appointment__detail textarea:focus {
+  border: 1.5px solid #1976d2;
+  outline: 1px solid #1976d2;
+}
+
+.appointment__collection {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  width: 95vw;
+  max-width: 1000px;
+}
+
+.appointment__collection > p {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgb(94, 94, 94);
+  background-color: rgb(223, 222, 222);
+  padding: 10px;
+  border-radius: 3px;
+  border: 2px solid white;
+  width: calc(100% - 20px);
+}
+
+.appointment__collection > p > .MuiSvgIcon-root {
+  font-size: 30px;
+  margin-right: 5px;
+  color: rgb(94, 94, 94);
+}
+
+@media only screen and (max-width: 560px) {
+  .appointment__collection > p {
+    width: 100%;
+  }
+}
+
+@keyframes appointment__btnClick {
+  25% {
+    transform: scale(0.97);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.02);
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .appointment__dateTime {
+    display: flex;
+    flex-direction: column;
+  }
+}

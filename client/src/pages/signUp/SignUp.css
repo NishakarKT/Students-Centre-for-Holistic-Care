@@ -1,0 +1,66 @@
+.signUp a:hover {
+  text-decoration: underline !important;
+}
+
+.signUp__container {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scroll-behavior: smooth;
+}
+
+.signUp__container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.signUp__container::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+}
+
+.signUp__container::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.signUp__errMsg {
+  color: red;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  animation: signUp__errMsgAppear 0.2s linear 3 forwards;
+}
+
+.signUp__darkTF label,
+.signUp__darkTF input {
+  color: white;
+}
+
+.signUp .css-ghsjzk-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid #949494 !important;
+}
+
+.signUp__darkTF .css-ghsjzk-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid white !important;
+}
+
+.signUp .css-1i5alow-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+  border: 2px solid white;
+}
+
+.signUp .MuiSpeedDialIcon-icon {
+  font-size: 40px;
+}
+
+.signUp .MuiSpeedDialIcon-root {
+  height: 40px;
+}
+
+@keyframes signUp__errMsgAppear {
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}

@@ -1,0 +1,71 @@
+.data__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=815&q=80")
+    rgba(0, 0, 0, 0.5) no-repeat center center / cover;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.data__intro > h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.data__intro > p {
+  width: 95vw;
+  font-weight: 500;
+  max-width: 800px;
+  font-size: 20px;
+}
+
+.data__introBtns {
+  display: flex;
+  align-items: center;
+}
+
+.data__introBtns > .MuiButton-root {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  text-transform: none;
+  transition: all 0.5s;
+  margin: 10px 2.5px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.data__introBtns > .MuiButton-root:hover {
+  filter: brightness(80%);
+  transform: translateY(5px);
+  background-color: white;
+}
+
+.recharts-responsive-container {
+  margin: 50px;
+  width: calc(100vw - 100px) !important;
+  height: 100vh !important;
+}
+.recharts-surface {
+  overflow: visible;
+}
+
+.data__deniedAccess {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1d2410;
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  margin-top: 50px;
+  border: none !important;
+}

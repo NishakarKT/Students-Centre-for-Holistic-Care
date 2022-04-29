@@ -1,0 +1,40 @@
+.imgList {
+  width: 95vw;
+  max-width: 1000px;
+  margin-bottom: 75px;
+}
+
+.imgList__title > .MuiSvgIcon-root {
+  font-size: 30px;
+  margin-right: 5px;
+  color: rgb(94, 94, 94);
+}
+
+.imgList__title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgb(94, 94, 94);
+  background-color: rgb(223, 222, 222);
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+}
+
+.imgList .MuiImageList-root {
+  margin: auto !important;
+  border: 2px solid white;
+  border-right: none;
+}
+
+.imgList .MuiImageList-root::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+.imgList .MuiImageList-root::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+}

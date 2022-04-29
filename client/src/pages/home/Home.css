@@ -1,0 +1,47 @@
+.home__scrollToTopBtn {
+  position: fixed !important;
+  bottom: 10px;
+  left: 10px;
+  color: white !important;
+  border: 2px solid white !important;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  transform: scale(0);
+  transition: all 0.5s !important;
+  margin-bottom: 0;
+  animation: home__btnDefault 2s linear infinite !important;
+}
+
+.home__scrollToTopBtn:hover {
+  transform: scale(0.9) !important;
+  background-color: #212613;
+}
+
+.home__scrollToTopBtn > .MuiSvgIcon-root {
+  font-size: 30px;
+}
+
+.home .css-1i5alow-MuiButtonBase-root-MuiFab-root-MuiSpeedDial-fab {
+  border: 2px solid white;
+  transition: all 0s !important;
+}
+
+.home .MuiSpeedDialIcon-icon {
+  font-size: 40px;
+}
+
+.home .MuiSpeedDialIcon-root {
+  height: 40px;
+}
+
+@keyframes home__btnDefault {
+  25% {
+    margin-bottom: 5px;
+  }
+  50% {
+    margin-bottom: 0;
+  }
+  75% {
+    margin-bottom: -5px;
+  }
+}

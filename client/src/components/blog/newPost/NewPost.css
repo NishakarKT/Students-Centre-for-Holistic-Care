@@ -1,0 +1,139 @@
+.newPost {
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  max-width: 1000px;
+  margin: 50px 0;
+}
+
+.newPost__title > .MuiSvgIcon-root {
+  font-size: 30px;
+  margin-right: 5px;
+  color: rgb(94, 94, 94);
+}
+
+.newPost__title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-weight: 600;
+  font-size: 25px;
+  color: rgb(94, 94, 94);
+  background-color: rgb(223, 222, 222);
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  border: 2px solid white;
+}
+
+.newPost > .MuiTextField-root {
+  margin-bottom: 10px;
+}
+
+.newPost textarea {
+  flex: 1;
+  font-size: 16px;
+  font-family: Roboto;
+  padding: 5px;
+  border-radius: 3px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 50vh;
+  max-height: 50vh;
+  border: 1.5px solid #9a9a9a;
+  outline: 1px solid #fff;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  transition: all 0.5s;
+}
+
+.newPost textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+.newPost textarea::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+}
+
+.newPost textarea:focus {
+  border: 1.5px solid #1976d2;
+  outline: 1px solid #1976d2;
+}
+
+.newPost::-webkit-scrollbar {
+  width: 5px;
+}
+
+.newPost::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+.newPost::-webkit-scrollbar-thumb {
+  background-color: grey;
+}
+
+.newPost__darkTF label,
+.newPost__darkTF input {
+  color: white;
+}
+
+.newPost .css-1480iag-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid #949494 !important;
+}
+
+.newPost__darkTF .css-1480iag-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid white !important;
+}
+
+.newPost__darkTA {
+  color: white;
+  background-color: #15202b;
+}
+
+.newPost__options {
+  display: flex;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.newPost__options > input {
+  display: none;
+}
+
+.newPost__options > .MuiSvgIcon-root {
+  font-size: 40px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #1976d2;
+  border-radius: 3px;
+  margin: 1px;
+  margin-top: -5px;
+}
+
+.newPost__options > .MuiSvgIcon-root:hover {
+  background-color: #0156ac;
+  cursor: pointer;
+}
+
+.newPost__options > .MuiButton-root {
+  width: 25%;
+  align-self: flex-end;
+  font-size: 18px;
+  color: white;
+  background-color: #1976d2;
+  transition: all 0.5s;
+  text-transform: none;
+  border: 2px solid white;
+  padding: 5px 40px;
+  margin-left: auto;
+}
+
+.newPost__options > .MuiButton-root:hover {
+  background-color: #1976d2;
+  transform: translateX(-10px);
+  filter: brightness(80%);
+}

@@ -1,0 +1,10 @@
+.comments {
+  flex: 1;
+}
+
+.comments__discussion {
+  color: teal;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 15px 0;
+}
